@@ -14,7 +14,7 @@ async function getMovie(MovieName) {
     h2.className = "bg-green-500 m-4 p-8 font-bold"
     h2.textContent = MovieName;
     const apikey = '82f62a66';
-    const url = `http://www.omdbapi.com/?apikey=${apikey}&s=${encodeURIComponent(MovieName)}`;
+    const url = `https://www.omdbapi.com/?apikey=${apikey}&s=${encodeURIComponent(MovieName)}`;
     try{
         const existingH2 = sec.querySelector('h2');
         if(existingH2){
